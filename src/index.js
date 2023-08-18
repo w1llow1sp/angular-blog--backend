@@ -8,6 +8,7 @@ const USERNAME = process.env.USER_NAME
 const SECRET_KEY = process.env.SECRET_KEY
 const DB_URL = process.env.DB_URL
 const url = `mongodb+srv://${USERNAME}:${SECRET_KEY}@${DB_URL}`;
+const PORT = process.env.PORT || 6010
 /*const url = 'mongodb://127.0.0.1/blog';*/
 
 
@@ -125,4 +126,4 @@ app.post('/api/post/deletePost', (req, res) => {
 
 
 
-app.listen(3000, () => console.log('Listening on port 3000'));
+app.listen(PORT, () => console.log('Listening on port 3000'));

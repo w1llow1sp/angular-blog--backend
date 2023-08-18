@@ -13,8 +13,8 @@ const PORT = process.env.PORT || 6010
 
 
 
-const User = require('./models/user');
-const Post = require('./models/post');
+const User = require('./src/models/user');
+const Post = require('./src/models/post');
 
 
 app.use(bodyParser.json());
